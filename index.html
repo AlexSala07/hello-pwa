@@ -48,7 +48,7 @@
     <div id="main">
       <div class="form-group">
         <label for="textInput">Input Text:</label>
-        <input type="text" v-model=textInputValue class="form-control" id="textInput">
+        <input type="text" :value="textInputValue" @input="textInputValue = $event.target.value" class="form-control" id="textInput">
       </div>
       <div class="form-group">
         <label for="textOutput">Output:</label>
